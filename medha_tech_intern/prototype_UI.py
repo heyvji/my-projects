@@ -18,7 +18,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    return pd.read_excel(r'C:\Users\Thippesh\my projects\medha_tech_intern\student dropout.xlsx')
+    return pd.read_excel(r'student dropout.xlsx')
 
 def main():
     st.title("📊 Student Dropout Analysis Dashboard")
