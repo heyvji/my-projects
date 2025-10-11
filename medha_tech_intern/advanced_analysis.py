@@ -276,7 +276,7 @@ def generate_recommendations(df, feature_importance):
 
 if __name__ == "__main__":
     # Load the dataset
-    df = load_data(r'C:\Users\Thippesh\my projects\medha_tech_intern\student dropout.xlsx')
+    df = load_data(r'C:\Users\Thippesh\Documents\Vijay\my projects\medha_tech_intern\student dropout.xlsx')
     
     # Perform advanced analysis
     feature_importance = feature_importance_analysis(df)
@@ -285,6 +285,3 @@ if __name__ == "__main__":
     model = predictive_model_analysis(df)
     generate_recommendations(df, feature_importance)
     
-    print("\n" + "=" * 60)
-    print("ADVANCED ANALYSIS COMPLETE!")
-    print("=" * 60)

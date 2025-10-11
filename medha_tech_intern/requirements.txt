@@ -4,5 +4,8 @@ numpy
 matplotlib
 seaborn
 plotly
+catboost
 openpyxl
 scipy
+joblib
+altair
