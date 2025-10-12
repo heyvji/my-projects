@@ -445,17 +445,17 @@ def main():
             
             with col1:
                 st.subheader("📚 Academic Info")
-                age = st.number_input("Age", min_value=15, max_value=25, value=18)
-                grade_1 = st.number_input("Grade 1", min_value=0, max_value=20, value=12)
-                grade_2 = st.number_input("Grade 2", min_value=0, max_value=20, value=12)
-                final_grade = st.number_input("Final Grade", min_value=0, max_value=20, value=12)
+                age = st.number_input("Age", min_value=15, max_value=30, value=18)
+                grade_1 = st.number_input("Grade 1", min_value=0, max_value=10, value=5)
+                grade_2 = st.number_input("Grade 2", min_value=0, max_value=10, value=5)
+                final_grade = st.number_input("Final Grade", min_value=0, max_value=20, value=10)
                 failures = st.number_input("Number of Failures", min_value=0, max_value=5, value=0)
                 absences = st.number_input("Number of Absences", min_value=0, max_value=50, value=5)
                 
             with col2:
                 st.subheader("👨‍👩‍👧‍👦 Family Info")
-                mother_edu = st.number_input("Mother Education Level", min_value=0, max_value=4, value=2)
-                father_edu = st.number_input("Father Education Level", min_value=0, max_value=4, value=2)
+                mother_edu = st.number_input("Mother Education Level", min_value=0, max_value=5, value=3)
+                father_edu = st.number_input("Father Education Level", min_value=0, max_value=5, value=3)
                 family_rel = st.number_input("Family Relationship Quality", min_value=1, max_value=5, value=4)
                 
                 school_support = st.selectbox("School Support", ["yes", "no"])
@@ -464,11 +464,11 @@ def main():
                 
             with col3:
                 st.subheader("⏰ Time & Activities")
-                study_time = st.number_input("Study Time", min_value=1, max_value=4, value=2)
+                study_time = st.number_input("Study Time", min_value=0, max_value=5, value=2)
                 free_time = st.number_input("Free Time", min_value=1, max_value=5, value=3)
-                going_out = st.number_input("Going Out Frequency", min_value=1, max_value=5, value=3)
+                going_out = st.number_input("Going Out Frequency", min_value=1, max_value=10, value=3)
                 
-                travel_time = st.number_input("Travel Time to School", min_value=1, max_value=4, value=1)
+                travel_time = st.number_input("Travel Time to School", min_value=1, max_value=5, value=1)
                 health = st.number_input("Health Status", min_value=1, max_value=5, value=5)
                 
                 internet = st.selectbox("Internet Access", ["yes", "no"])
