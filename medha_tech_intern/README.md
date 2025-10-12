@@ -129,14 +129,14 @@ The app provides:
 - Matplotlib and Seaborn for visualizations
 - Responsive design with custom CSS styling
 
-## Contributing
+## Future enhancements
 
-Feel free to contribute by:
 - Adding new features
 - Improving model performance
+- using different model
 - Enhancing visualizations
 - Fixing bugs or issues
 
-## License
+## Use case
 
 This project is for educational purposes.

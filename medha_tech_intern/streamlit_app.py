@@ -11,14 +11,14 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import warnings
 warnings.filterwarnings('ignore')
 
-# Page configuration
+# Page configuration/layout
 st.set_page_config(
     page_title="Student Dropout Prediction",
     page_icon="🎓",
     layout="wide"
 )
 
-# Custom CSS
+# Design of the pages/sections
 st.markdown("""
 <style>
 body {
