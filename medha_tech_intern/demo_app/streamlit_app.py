@@ -58,7 +58,7 @@ body {
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_excel('student dropout.xlsx')
+        df = pd.read_excel(r'student dropout.xlsx')
         return df
     except FileNotFoundError:
         st.error("Please ensure 'student dropout.xlsx' is in the same directory as this app.")
