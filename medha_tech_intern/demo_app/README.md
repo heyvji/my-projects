@@ -56,6 +56,31 @@ streamlit run streamlit_app.py
 ```
 3. Open your web browser and navigate to the provided local URL (usually http://localhost:8501)
 
+## Docker (Containerized) Usage
+
+Make sure Docker is installed and running on your machine. Also ensure the dataset file `student dropout.xlsx` is present in the project folder (it is ignored by the image via `.dockerignore`; mounting or copying it into the container is required).
+
+Build the Docker image (PowerShell):
+```powershell
+docker build -t student-dropout-app .
+```
+
+Run the container exposing Streamlit port:
+```powershell
+docker run --rm -p 8501:8501 -v ${PWD}: /app student-dropout-app
+```
+
+Or use docker-compose (PowerShell):
+```powershell
+docker-compose up --build
+```
+
+Open http://localhost:8501 in your browser.
+
+Notes:
+- If you mount the project directory into the container (with `-v ${PWD}:/app` or via `docker-compose`), the container will be able to read the Excel dataset placed in the host folder.
+- If the app errors with FileNotFoundError, double-check the dataset filename and that it exists in the project root.
+
 ## File Structure
 
 ```
