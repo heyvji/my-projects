@@ -10,8 +10,8 @@ dist/
 *.sqlite3
 *.log
 .DS_Store
-*.xlsx
-*.xls
+# *.xlsx
+# *.xls
 *.csv
 .venv/
 /.git
